@@ -1,0 +1,18 @@
+1. ./exarsice_1.sh
+2. ./exarsice_2.sh book.txt |sort -k 2
+3. ./exarsice_3.sh
+4. ./exarsice_4.sh
+5. sudo find / -user bobbyrx | wc -l
+6 A). find . -type f -size 0 -exec rm -i {} \; 
+6 B). sudo find /home -type f -user bobbyrx -printf "%s %f\n"|sort -rn| head -5| cut -d" " -f 2 #### %s - size ; %f - file_name ; \n - newline
+7. ./exarsice_7.sh exarsice_7.txt | sort -rn | head -1
+8. ./exarsice_8.sh
+9. find $HOME -type f -exec stat --printf '%x/%i\n' {} + |sort -n|head -1| cut -d'/' -f 2
+10. ./exarsice_10.sh exarsice_10.txt 
+11. ./exarsice_11.sh exarsice_11.txt 
+12 A). find $HOME -type f -inum $(find $HOME -printf '%T+ %i\n' -type f | sort -rn | head -1 | cut -d" " -f 2) -printf '%d\n'
+12 B). find $HOME -printf '%d\n' -type f | sort -n | head -2 | tail -1 
+13. ./exarsice_13.sh exarsice_13
+
+
+16. ./exarsice_16.sh exarsice_16.txt ENABLED_OPTIONS ENABLED_OPTIONS_EXTRA

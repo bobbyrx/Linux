@@ -1,0 +1,8 @@
+la1 -> a1
+lg -> g
+lh -> dr
+ldr -> a.txt
+lfr -> a.txt
+lc -> c
+lr -> fr
+Broken symlinks: 3
