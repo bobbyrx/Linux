@@ -1,0 +1,50 @@
+1 cp /etc/passwd my_passwd
+
+2 mkdir -p practice_test/test1
+
+3.1 touch dril/f1.txt
+3.2 touch dril/f2.txt
+3.3 touch dril/f3.txt
+3.4 mv dril/f2.txt dril2
+
+4 find /home -type d
+
+
+5 ln -s /etc/passwd passwd_symlink
+
+6.1 chmod 0435 permissions.txt
+6.2 chmod u=rwx,g=rx,o=rx permissions.txt
+
+7 find /home/* -type f -mmin -60
+
+8 cat zad_2.txt
+
+9 find -maxdepth 2 -type f
+
+10 find -maxdepth 2 -type f|head -5 > file_10.txt
+
+11 find -mindepth 2 -type f
+
+12 find -mindepth 1 -maxdepth 1 -type d
+
+13 find /etc -mindepth 1 -maxdepth 1 -type d |head -10
+
+14 find /home -type f -size +42
+
+15 find -type f -perm 644
+
+16 find -type f -newer my_passwd
+
+17  find -type f -newer my_passwd -exec rm -i {} \;
+
+18 find /bin -perm 777
+
+19 find /bin -perm 777 -exec cp {} bin2 \;
+
+20 find bin2/* -name b* -exec tar -c -f b_start.tar {} \;
+
+21 find -type f -exec wc -l {} \;
+
+22.1 find /home |ls -S|head -1
+22.2 cp b_start.tar a_end.tar
+
